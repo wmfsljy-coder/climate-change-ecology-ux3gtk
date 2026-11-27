@@ -48,6 +48,7 @@
 
         <section class="scene" data-title="하루와 30년 — 날씨와 기후 가르기">
           <div class="story"><div class="who">🧑‍🏫</div><div class="say"><span class="name">지리 선생님</span>“서윤이가 겪은 건 그날의 <b>날씨</b>야. 순간순간 바뀌는 대기 상태지. <b>기후</b>는 한 지역의 날씨를 <b>약 30년</b> 동안 평균한 것이고. 10년 치 매일 기온을 모아 두었으니, 평균하는 기간을 늘려 가며 무엇이 사라지는지 보자.”</div></div>
+          <div class="pv" data-key="p1-2"><p class="pv-q">평균하는 기간을 1일에서 몇 주~몇 달 정도로 늘리면, 그래프에서 어떤 변화가 먼저 사라질까요?</p><button class="pv-o" data-why="평균을 내면 흔들림이 줄어드니 금방 평평해질 것 같지만, 평균하는 기간보다 훨씬 긴 주기로 바뀌는 변화는 남습니다. 여름과 겨울이 바뀌는 계절 변화는 몇 주나 몇 달 평균으로는 지워지지 않습니다.">몇 주만 평균해도 오르내림이 모두 사라져 거의 평평해진다</button><button class="pv-o" data-ok>하루하루의 들쭉날쭉은 사라지지만, 여름·겨울의 큰 물결은 남는다</button><button class="pv-o" data-why="평균은 여러 날의 값을 하나로 고르게 만드는 계산입니다. 기간 안에서 높은 날과 낮은 날이 서로 상쇄되어 짧은 흔들림이 줄어들므로 그래프가 매끈해집니다.">평균을 내도 매일 기온을 그대로 쓰므로 그래프 모양은 달라지지 않는다</button><p class="pv-a">평균하는 기간이 길수록 짧은 변동부터 지워지고, 계절처럼 더 긴 변화는 그만큼 더 길게 평균해야 지워집니다. 그래서 날마다 바뀌는 <b>날씨</b>와 달리, <b>기후</b>는 약 30년처럼 긴 기간의 평균으로 나타냅니다.</p></div>
           <div class="stage-card">
             <div class="canvas-wrap studio"><canvas id="c-avg" width="900" height="360"></canvas></div>
             <div class="sim-side">
@@ -71,6 +72,7 @@
         <section class="scene" data-title="기후 만들기 — 같은 위도, 다른 겨울">
           <div class="story"><div class="who">🧑‍🎓</div><div class="say"><span class="name">서윤</span>“위도가 같아도 다른 기후인자가 다르면 기후가 달라지는 거네. 그럼 기후인자를 직접 바꿔서 콘월과 하바롭스크를 둘 다 만들어 볼래!”</div></div>
           <figure class="hero-art"><img src="img/cornwall-palm.webp" alt="겨울 바닷가 마을을 블록처럼 잘라 낸 모형. 왼쪽에는 짙푸른 바다와 바위 해안, 작은 항구가 있고, 바닷가 돌집 정원에 야자나무가 서 있다. 바다에서 멀어진 오른쪽 언덕에는 잎이 진 나무와 서리가 내린 들판이 보이고, 앞면 단면에 바닷물과 바위층이 보인다." width="900" height="900" loading="lazy"><figcaption><b>북위 50° 영국 바닷가의 야자나무는 바다가 키웁니다</b> 콘월은 하바롭스크보다 북쪽인데도 1월 평균 기온이 약 8 ℃입니다. 멕시코 만류에서 이어지는 북대서양 난류와 바다에서 불어오는 바람이 겨울을 데우기 때문입니다. 바다는 육지보다 천천히 데워지고 천천히 식어서, 바닷가는 겨울이 덜 춥고 여름이 덜 덥습니다. <span class="art-note">⚠ 해안 지형의 높낮이와 마을 크기는 실제 비율이 아닙니다.</span></figcaption></figure>
+          <div class="pv" data-key="p1-4"><p class="pv-q">바다에서 떨어진 정도와 해류는 그대로 두고 위도만 낮추어(적도 쪽으로) 가면, 연교차는 어떻게 될까요?</p><button class="pv-o" data-why="적도 부근이 더운 것은 맞지만, 덥다는 것과 계절 차이가 크다는 것은 다릅니다. 적도 부근은 1년 내내 햇빛이 높은 각도로 비쳐 여름과 겨울에 받는 햇빛의 양이 비슷합니다.">적도는 더우니 여름과 겨울의 차이도 커진다</button><button class="pv-o" data-why="위도는 평균 기온뿐 아니라 계절에 따라 받는 햇빛의 차이도 정합니다. 고위도일수록 여름과 겨울의 낮 길이와 태양 고도 차이가 커서 연교차가 커집니다.">위도는 평균 기온만 바꿀 뿐 연교차와는 관계없다</button><button class="pv-o" data-ok>작아진다</button><p class="pv-a">고위도일수록 여름과 겨울의 태양 고도와 낮 길이 차이가 커서 연교차가 큽니다. 적도 부근은 1년 내내 받는 햇빛이 비슷해 연교차가 작습니다. 이처럼 <b>위도</b>는 기온의 높낮이와 계절 차이를 함께 정하는 기후인자입니다.</p></div>
           <div class="stage-card">
             <div class="canvas-wrap" style="background:#e4eaf1" data-kind-pos="bl"><canvas id="c-clim" width="900" height="690"></canvas></div>
             <div class="sim-side">
@@ -141,6 +143,7 @@
 
         <section class="scene" data-title="얼음 거울 — 반사율 실험">
           <div class="story"><div class="who">👩‍🔬</div><div class="say"><span class="name">도하</span>“얼음은 햇빛을 잘 반사하는 거울이에요. 얼음이 반사하는 비율(반사율)은 약 <b>60%</b>, 어두운 바닷물은 약 <b>6%</b>뿐이죠. 9월 해빙 면적을 바꿔 가며 <span data-place=80,0,3,sv>북극해</span>가 흡수하는 햇빛이 얼마나 달라지는지 확인해 보세요.”</div></div>
+          <div class="pv" data-key="p2-2"><p class="pv-q">9월 해빙 면적을 줄여 가면, 북극해가 흡수하는 햇빛과 반사하는 햇빛은 어떻게 변할까요?</p><button class="pv-o" data-ok>흡수는 늘고 반사는 줄어든다</button><button class="pv-o" data-why="물이 차가운 것과 햇빛을 얼마나 흡수하는지는 다른 문제입니다. 흡수하는 양은 표면이 햇빛을 얼마나 반사하느냐가 정하는데, 어두운 바닷물은 얼음보다 햇빛을 훨씬 적게 반사합니다.">녹은 바닷물은 차가우므로 흡수하는 햇빛이 오히려 줄어든다</button><button class="pv-o" data-why="들어오는 햇빛의 양이 같아도, 표면이 얼음인지 바다인지에 따라 되돌려 보내는 비율이 다릅니다. 그래서 표면이 바뀌면 흡수하는 양도 달라집니다.">들어오는 햇빛이 같으니 흡수와 반사도 그대로다</button><p class="pv-a">표면이 햇빛을 반사하는 비율을 <b>반사율(알베도)</b>이라고 합니다. 반사율이 높은 해빙이 줄고 반사율이 낮은 바다가 드러날수록, 같은 햇빛을 받아도 북극해가 흡수하는 에너지가 늘어납니다.</p></div>
           <div class="stage-card">
             <div class="canvas-wrap studio"><canvas id="c-ice" width="900" height="340"></canvas></div>
             <div class="sim-side">
@@ -161,6 +164,7 @@
 
         <section class="scene" data-title="되먹임 조립대 — 키우는 고리, 누르는 고리">
           <div class="story"><div class="who">👩‍🔬</div><div class="say"><span class="name">도하</span>“이산화 탄소가 늘어 처음에 1 ℃가 올랐다고 합시다. 그 결과가 다시 원인을 <b>키우면 양의 되먹임</b>, <b>누그러뜨리면 음의 되먹임</b>이에요. 고리를 하나씩 켜고 끄면서 최종 기온 상승이 어떻게 되는지 보세요. 고리마다 숫자는 ‘한 바퀴에 앞 변화의 몇 배를 더하는지’입니다.”</div></div>
+          <div class="pv" data-key="p2-3"><p class="pv-q">양의 되먹임 고리 하나(수증기 +0.30)만 켜면, 처음 1 ℃였던 기온 상승은 바퀴가 거듭될수록 어떻게 될까요?</p><button class="pv-o" data-why="양의 되먹임이 변화를 키우는 것은 맞지만, 한 바퀴에 덧붙는 양이 앞 변화의 일부(1보다 작은 비율)라면 바퀴마다 덧붙는 양이 점점 작아집니다. 그래서 합은 어느 값에 가까워집니다.">결과가 원인을 계속 키우므로 끝없이 커진다</button><button class="pv-o" data-ok>커지지만, 덧붙는 양이 점점 줄어 어느 값에 가까워진다</button><button class="pv-o" data-why="덧붙은 0.3 ℃도 다시 원인이 되어 그 0.3배(0.09 ℃)를 또 더하는 식으로 고리가 계속 돕니다. 그래서 1.3 ℃보다 조금 더 커집니다.">한 번만 0.3 ℃가 더해져 1.3 ℃에서 멈춘다</button><p class="pv-a">결과가 처음 원인을 키우는 고리가 <b>양의 되먹임</b>입니다. 한 바퀴에 더하는 비율이 1보다 작으면 덧붙는 양이 바퀴마다 줄어, 변화는 한없이 커지지 않고 처음보다 큰 어느 값에 가까워집니다.</p></div>
           <div class="stage-card">
             <div class="canvas-wrap studio" data-kind="model calc"><canvas id="c-fb" width="900" height="340"></canvas></div>
             <div class="sim-side">
@@ -224,6 +228,7 @@
 
         <section class="scene" data-title="서식 한계선 — 몇 ℃면 경기도까지 올까">
           <div class="story"><div class="who">🧑‍🔬</div><div class="say"><span class="name">곤충 연구자</span>“이 모형에서 실잠자리는 <b>연평균 기온 14.6 ℃ 이상</b>인 곳에서만 겨울을 난다고 가정해요. 우리나라는 남쪽에서 북쪽으로 위도 1°마다 연평균 기온이 약 0.8 ℃ 낮아지고요. 한반도 전체 기온을 올려 가며 서식 한계선이 어디까지 올라가는지 보세요.”</div></div>
+          <div class="pv" data-key="p3-2"><p class="pv-q">한반도 전체 기온을 조금씩 똑같은 폭으로 올려 가면, 서식 한계선이 한 번에 북쪽으로 옮겨 가는 거리는 어떻게 될까요?</p><button class="pv-o" data-why="북쪽일수록 추우니 덜 움직일 것 같지만, 이 모형에서는 위도 1°마다 기온이 늘 같은 폭(약 0.8 ℃)으로 낮아집니다. 그래서 기온이 같은 폭만큼 오르면 한계선도 같은 거리만큼 옮겨 갑니다.">처음에는 많이 옮겨 가다가 북쪽으로 갈수록 점점 조금씩 옮겨 간다</button><button class="pv-o" data-why="서식 한계선은 땅에 그어진 경계가 아니라, 생물이 겨울을 날 수 있는 기온이 나타나는 자리입니다. 기온이 오르면 그 기온이 나타나는 자리가 북쪽으로 옮겨 갑니다.">서식 한계선은 지도 위에 정해진 선이라 기온이 올라도 그대로다</button><button class="pv-o" data-ok>오른 기온만큼 늘 같은 거리씩 옮겨 간다</button><p class="pv-a">이 모형에서는 기온이 위도에 따라 일정하게 낮아지므로, 전체 기온이 오른 만큼 같은 기온의 선, 곧 <b>서식 한계선</b>이 북쪽으로 일정하게 옮겨 갑니다. 실제로는 지형과 서식지에 따라 한계선이 구불구불하고, 생물이 새 지역에 자리 잡기까지 시간이 걸립니다.</p></div>
           <div class="stage-card">
             <div class="canvas-wrap studio"><canvas id="c-map" width="900" height="380"></canvas></div>
             <div class="sim-side">
@@ -247,6 +252,7 @@
         <section class="scene" data-title="해상 도시 설계 — 떠 있는 동네">
           <div class="story"><div class="who">🏗️</div><div class="say"><span class="name">도시 설계자</span>“<span data-place=35.1059,129.0439,13,s>부산</span>은 유엔 해비타트와 함께 해수면 상승에 대비한 <b>해상 도시</b>를 계획했어요. 기자님도 설계에 참여해 보세요. 바다 위 부지 한 모듈을 <b>태양광 발전</b>, <b>농장</b>, <b>주거</b>로 나눠야 합니다. 셋 다 기준을 넘겨야 해요.”</div></div>
           <div class="stage-card"><div id="s3-q1"></div></div>
+          <div class="pv" data-key="p3-4"><p class="pv-q">모듈의 넓이는 정해져 있습니다. 농장 면적은 그대로 두고 태양광 발전 면적을 늘리면, 다른 기준은 어떻게 될까요?</p><button class="pv-o" data-ok>전력은 늘지만, 주거 면적이 줄어 살 수 있는 주민 수가 줄어든다</button><button class="pv-o" data-why="이 설계에서는 한 모듈의 정해진 넓이를 세 구역이 나누어 씁니다. 한 구역을 넓히면 그만큼 다른 구역이 줄어듭니다.">태양광은 바다 위에 따로 띄우므로 다른 구역에는 영향이 없다</button><button class="pv-o" data-why="전기가 넉넉해도 작물을 키울 땅과 사람이 살 공간은 따로 있어야 합니다. 넓이가 한정된 곳에서는 한 기준을 높이면 다른 기준이 낮아질 수 있습니다.">전기가 남으면 그 전기로 채소와 집 문제도 저절로 해결된다</button><p class="pv-a">넓이가 한정된 곳에서는 한 구역을 늘리면 다른 구역이 줄어드는 <b>맞바꿈</b>이 생깁니다. 그래서 여러 기준을 함께 만족하려면 구역마다의 비율을 함께 따져 균형을 찾아야 합니다.</p></div>
           <div class="stage-card" style="margin-top:14px">
             <div class="canvas-wrap studio" data-kind="model calc"><canvas id="c-city" width="900" height="340"></canvas></div>
             <div class="controls">
@@ -331,7 +337,7 @@
 </div>
 
 <button class="theme-toggle" id="themeToggle">라이트 모드</button>
-<script src="../assets/theme.js?v=b0f7ed73"></script>
+<script src="../assets/theme.js?v=f0b96aff"></script>
 <script src="../assets/scope.js?v=cecf172a"></script>
 <script src="../assets/kit.js?v=94e3bd47"></script>
 <script src="../assets/story.js?v=cd80882e"></script>
