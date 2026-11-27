@@ -72,7 +72,7 @@
           <div class="story"><div class="who">🧑‍🎓</div><div class="say"><span class="name">서윤</span>“위도가 같아도 다른 기후인자가 다르면 기후가 달라지는 거네. 그럼 기후인자를 직접 바꿔서 콘월과 하바롭스크를 둘 다 만들어 볼래!”</div></div>
           <figure class="hero-art"><img src="img/cornwall-palm.webp" alt="겨울 바닷가 마을을 블록처럼 잘라 낸 모형. 왼쪽에는 짙푸른 바다와 바위 해안, 작은 항구가 있고, 바닷가 돌집 정원에 야자나무가 서 있다. 바다에서 멀어진 오른쪽 언덕에는 잎이 진 나무와 서리가 내린 들판이 보이고, 앞면 단면에 바닷물과 바위층이 보인다." width="900" height="900" loading="lazy"><figcaption><b>북위 50° 영국 바닷가의 야자나무는 바다가 키웁니다</b> 콘월은 하바롭스크보다 북쪽인데도 1월 평균 기온이 약 8 ℃입니다. 멕시코 만류에서 이어지는 북대서양 난류와 바다에서 불어오는 바람이 겨울을 데우기 때문입니다. 바다는 육지보다 천천히 데워지고 천천히 식어서, 바닷가는 겨울이 덜 춥고 여름이 덜 덥습니다. <span class="art-note">⚠ 해안 지형의 높낮이와 마을 크기는 실제 비율이 아닙니다.</span></figcaption></figure>
           <div class="stage-card">
-            <div class="canvas-wrap" style="background:#e4eaf1"><canvas id="c-clim" width="900" height="690"></canvas></div>
+            <div class="canvas-wrap" style="background:#e4eaf1" data-kind-pos="bl"><canvas id="c-clim" width="900" height="690"></canvas></div>
             <div class="sim-side">
               <div class="readout" id="cl-read"></div>
               <div style="display:grid;gap:14px">
@@ -108,6 +108,15 @@
           <div class="stage-card" style="padding:6px 0 4px;margin-top:16px"><div id="wk1"></div></div>
         </section>
       </div>
+      <details class="model-gap"><summary>🔍 이 모형이 실제와 다른 점</summary>
+      <ul>
+      <li><b>모형에서는</b> 10년 치 매일 기온을 ‘평균 15 ℃ + 계절에 따른 오르내림 + 무작위 흔들림’이라는 식으로 만들어 썼습니다. <b>실제로는</b> 해마다 겨울과 여름의 세기가 다르고 기후 자체도 서서히 바뀌어서, 평균 기간을 늘려도 변동 폭이 이렇게 매끈하게 줄어들지는 않습니다.</li>
+      <li><b>모형에서는</b> 1월 기온과 연교차를 위도, 바다에서 떨어진 정도, 해류 세 가지로만 계산하고, 해류의 효과도 난류 +6 ℃, 한류 −3 ℃처럼 늘 같은 값으로 둡니다. <b>실제로는</b> 산맥과 높이, 바람의 방향(편서풍·계절풍), 해류의 세기와 해안까지의 거리도 함께 작용합니다.</li>
+      <li><b>모형에서는</b> 바다에서 내륙까지의 거리와 해안의 높낮이를 화면에 맞게 크게 줄여 그렸습니다. <b>실제로는</b> 하바롭스크는 바다에서 수백 km 떨어진 대륙 안쪽에 있고, 겨울에는 시베리아 쪽에서 불어오는 차가운 북서 계절풍의 영향도 받습니다.</li>
+      <li><b>모형에서는</b> 기후를 ‘약 30년 평균’ 하나로만 나타냅니다. <b>실제로</b> 세계기상기구는 30년 평균값을 기후 평년값으로 쓰고 10년마다 기간을 새로 정하는데, 기후가 변하고 있어서 어느 30년을 고르느냐에 따라 평년값도 달라집니다.</li>
+      </ul>
+      <p class="gap-src"><b>자료 출처</b> · 그림의 수치는 수업용으로 단순하게 정한 값이고, 이야기 첫 장면의 두 도시 기온은 평년값을 어림한 값입니다. 바탕 자료: 세계기상기구(WMO) 기후 평년값, 2022 개정 교육과정 기후변화와 환경생태 교과서. 이 소단원의 실제 자료 카드: NASA 랭글리 연구소 POWER 프로젝트 기후값(2001~2020, MERRA-2 재분석) — 콘월과 세인트존스 격자의 월평균 기온.</p>
+      </details>
       <p class="teacher-note">교사용: 주소 끝에 <a href="?open=1">?open=1</a>을 붙이면 교사 미리 보기로 열립니다.</p>
     </section>
 
@@ -153,7 +162,7 @@
         <section class="scene" data-title="되먹임 조립대 — 키우는 고리, 누르는 고리">
           <div class="story"><div class="who">👩‍🔬</div><div class="say"><span class="name">도하</span>“이산화 탄소가 늘어 처음에 1 ℃가 올랐다고 합시다. 그 결과가 다시 원인을 <b>키우면 양의 되먹임</b>, <b>누그러뜨리면 음의 되먹임</b>이에요. 고리를 하나씩 켜고 끄면서 최종 기온 상승이 어떻게 되는지 보세요. 고리마다 숫자는 ‘한 바퀴에 앞 변화의 몇 배를 더하는지’입니다.”</div></div>
           <div class="stage-card">
-            <div class="canvas-wrap studio"><canvas id="c-fb" width="900" height="340"></canvas></div>
+            <div class="canvas-wrap studio" data-kind="model calc"><canvas id="c-fb" width="900" height="340"></canvas></div>
             <div class="sim-side">
               <div class="readout" id="fb-read"></div>
               <div><div id="fb-ctrl"></div><button type="button" class="btn sm" id="fb-play" style="margin:8px 4px 0">⏸ 움직임 멈추기</button></div>
@@ -182,6 +191,15 @@
           <div class="stage-card" style="padding:6px 0 4px;margin-top:16px"><div id="wk2"></div></div>
         </section>
       </div>
+      <details class="model-gap"><summary>🔍 이 모형이 실제와 다른 점</summary>
+      <ul>
+      <li><b>모형에서는</b> 해빙이 햇빛의 약 60 %를, 드러난 바다가 약 6 %를 반사한다고 늘 같은 값으로 둡니다. <b>실제로는</b> 눈이 덮인 해빙은 80 % 넘게 반사하기도 하고, 여름에 얼음 위에 녹은 물웅덩이가 생기면 반사하는 비율이 크게 떨어집니다.</li>
+      <li><b>모형에서는</b> 구름과 계절, 해의 높이를 빼고 ‘햇빛 100’이 모두 얼음이나 바다 표면에 닿는다고 둡니다. <b>실제로는</b> 북극 하늘의 구름이 햇빛의 상당 부분을 먼저 되돌려 보내고, 겨울에는 해가 거의 뜨지 않아서 얼음과 바다의 반사율 차이는 주로 여름에 힘을 씁니다.</li>
+      <li><b>모형에서는</b> 북극해 넓이를 1,400만 km²로 고정하고 그 안의 얼음 면적만 바꿉니다. <b>실제로는</b> 해빙 면적이 계절에 따라 크게 달라져 3월 무렵 가장 넓고 9월 무렵 가장 좁으며, 넓이와 함께 얼음의 두께도 해마다 달라집니다.</li>
+      <li><b>모형에서는</b> 되먹임 고리마다 세기(+0.30, −0.10 같은 값)를 수업용으로 정해 두고, 모든 고리가 한꺼번에 바로 작용한다고 둡니다. <b>실제로는</b> 수증기 되먹임은 며칠~몇 주 만에, 영구 동토층의 탄소 방출은 수십~수백 년에 걸쳐 나타나고, 구름의 되먹임은 구름의 높이와 종류에 따라 방향이 달라 가장 불확실한 부분으로 꼽힙니다.</li>
+      </ul>
+      <p class="gap-src"><b>자료 출처</b> · 그림의 수치는 수업용으로 단순하게 정한 값입니다. 바탕 자료: 미국 국립 설빙 자료 센터(NSIDC) 북극 해빙 면적 자료, 기후 변화에 관한 정부 간 협의체(IPCC) 제6차 평가 보고서, 2022 개정 교육과정 기후변화와 환경생태 교과서.</p>
+      </details>
       <p class="teacher-note">교사용: 주소 끝에 <a href="?open=1">?open=1</a>을 붙이면 교사 미리 보기로 열립니다.</p>
     </section>
 
@@ -230,7 +248,7 @@
           <div class="story"><div class="who">🏗️</div><div class="say"><span class="name">도시 설계자</span>“<span data-place=35.1059,129.0439,13,s>부산</span>은 유엔 해비타트와 함께 해수면 상승에 대비한 <b>해상 도시</b>를 계획했어요. 기자님도 설계에 참여해 보세요. 바다 위 부지 한 모듈을 <b>태양광 발전</b>, <b>농장</b>, <b>주거</b>로 나눠야 합니다. 셋 다 기준을 넘겨야 해요.”</div></div>
           <div class="stage-card"><div id="s3-q1"></div></div>
           <div class="stage-card" style="margin-top:14px">
-            <div class="canvas-wrap studio"><canvas id="c-city" width="900" height="340"></canvas></div>
+            <div class="canvas-wrap studio" data-kind="model calc"><canvas id="c-city" width="900" height="340"></canvas></div>
             <div class="controls">
               <div class="ctrl-group">
                 <div class="ctrl-label">태양광 발전 면적<span class="val" id="city-s-val">10%</span></div>
@@ -257,6 +275,15 @@
           <div class="stage-card" style="padding:6px 0 4px;margin-top:16px"><div id="wk3"></div></div>
         </section>
       </div>
+      <details class="model-gap"><summary>🔍 이 모형이 실제와 다른 점</summary>
+      <ul>
+      <li><b>모형에서는</b> 연평균 기온이 위도만으로 정해져서(위도 1°마다 0.8 ℃씩 낮아짐) 서식 한계선이 동서로 곧게 그어집니다. <b>실제로는</b> 같은 위도라도 해안과 내륙, 동해안과 서해안, 산지와 평지의 기온이 달라 한계선이 구불구불합니다.</li>
+      <li><b>모형에서는</b> 연평균 기온 14.6 ℃ 하나로 살 수 있는 곳인지를 가릅니다. <b>실제로</b> 곤충이 사는 범위는 겨울 최저 기온, 먹이, 알을 낳을 물가 같은 서식지에도 달려 있고, 기온이 올라도 새 지역까지 퍼져 자리 잡기까지는 시간이 걸립니다.</li>
+      <li><b>모형에서는</b> 한반도 해안선을 단순한 점 몇십 개로 그리고 땅의 높낮이는 넣지 않았습니다. <b>실제로는</b> 높은 산지는 같은 위도의 평지보다 기온이 낮아서, 같은 위도 안에서도 살 수 있는 곳과 살 수 없는 곳이 섞여 있습니다.</li>
+      <li><b>모형에서는</b> 해상 도시의 태양광 1 %마다 전력 약 3.3 %, 농장 1 %마다 채소 3 %, 주거 1 %마다 주민 300명처럼 늘 같은 비율로 계산합니다. <b>실제로는</b> 날씨와 계절에 따라 태양광 발전량이 달라 전기를 저장하는 장치가 필요하고, 태풍과 높은 파도를 견디는 구조, 바닷물을 민물로 바꾸는 설비까지 함께 따져야 합니다.</li>
+      </ul>
+      <p class="gap-src"><b>자료 출처</b> · 그림의 수치는 수업용으로 단순하게 정한 값입니다. 바탕: 2022 개정 교육과정 기후변화와 환경생태 교과서. 이 소단원의 실제 자료 카드: NASA POWER 월별 자료 — 부산 격자(북위 35.18°, 동경 129.04°)의 연평균 기온 1981~2024, 기상청 날씨누리 과거 관측 일별 자료 — 창원(155) 일평균 기온.</p>
+      </details>
       <p class="teacher-note">교사용: 주소 끝에 <a href="?open=1">?open=1</a>을 붙이면 교사 미리 보기로 열립니다.</p>
     </section>
 
@@ -304,33 +331,33 @@
 </div>
 
 <button class="theme-toggle" id="themeToggle">라이트 모드</button>
-<script src="../assets/theme.js?v=c3418585"></script>
+<script src="../assets/theme.js?v=b0f7ed73"></script>
 <script src="../assets/scope.js?v=cecf172a"></script>
 <script src="../assets/kit.js?v=94e3bd47"></script>
 <script src="../assets/story.js?v=cd80882e"></script>
 <script src="../assets/quiz.js?v=d1e13494"></script>
-<script src="../assets/lab.js?v=5ab4e410"></script>
+<script src="../assets/lab.js?v=8e2a04e0"></script>
 <script src="../assets/share-config.js?v=7c996fc0"></script>
 <script src="../assets/share.js?v=8ebc37fa"></script>
 <script src="../assets/account.js?v=435378ac"></script>
-<script src="episodes.js"></script>
-<script src="worked.js"></script>
-<script src="handoff.js"></script>
-<script src="quiz-items.js"></script>
+<script src="episodes.js?v=23659580"></script>
+<script src="worked.js?v=42eda7ab"></script>
+<script src="handoff.js?v=1422b221"></script>
+<script src="quiz-items.js?v=59586a34"></script>
 <script src="../assets/review.js?v=c07fe051"></script>
 <script src="../assets/peer.js?v=b6f0b008"></script>
 <script src="../assets/qboard.js?v=b3bb8d32"></script>
-<script src="lab-cases.js"></script>
+<script src="lab-cases.js?v=bc631ad8"></script>
 <script src="../assets/link.js?v=48d3d217"></script>
-<script src="try-items.js"></script>
-<script src="scale-items.js"></script>
-<script src="data/climate-points.js"></script>
-<script src="data/cw155.js"></script>
-<script src="real-cases.js"></script>
+<script src="try-items.js?v=24905a2d"></script>
+<script src="scale-items.js?v=a3faf6ce"></script>
+<script src="data/climate-points.js?v=2baa8444"></script>
+<script src="data/cw155.js?v=03f6a79b"></script>
+<script src="real-cases.js?v=c4355e2e"></script>
 <script src="../assets/precheck.js?v=6e00687c"></script>
-<script src="precheck-items.js"></script>
+<script src="precheck-items.js?v=a782c2e8"></script>
 <script src="../assets/aicheck.js?v=59c8eb37"></script>
-<script src="aicheck-items.js"></script>
+<script src="aicheck-items.js?v=1b4ed18d"></script>
 <script src="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/video-links.js" defer></script>
 </body>
 </html>
